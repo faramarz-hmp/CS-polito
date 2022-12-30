@@ -1,3 +1,4 @@
+import sys
 #!/usr/bin/python3
 
 CORRECT_PIN = 1234
@@ -19,12 +20,12 @@ def main():
 
         if user_pin == CORRECT_PIN: 
             print("Your PIN is correct")
-            exit(0)
+            sys.exit("countinue")
         else: 
             print("Your PIN is incorrect")
 
-    print("Your bank card is blocked")
-    exit(0)
+    sys.exit("Your bank card is blocked")
+
 
 if __name__ == "__main__":
     main()
